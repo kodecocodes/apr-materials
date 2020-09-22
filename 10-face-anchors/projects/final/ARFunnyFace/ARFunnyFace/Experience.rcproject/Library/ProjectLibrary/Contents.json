@@ -1,0 +1,17 @@
+[
+  {
+    "libraryIdentifier" : "ac2d8417c2f786f4950fe097e1263a7f",
+    "format" : "model",
+    "displayName" : "Eyeball.usdz"
+  },
+  {
+    "libraryIdentifier" : "8799a12d522370fb4d82f1c02d164acd",
+    "format" : "model",
+    "displayName" : "Glasses.usdz"
+  },
+  {
+    "libraryIdentifier" : "a843c68230b10474bf8a7961a9738807",
+    "format" : "model",
+    "displayName" : "Mustache.usdz"
+  }
+]

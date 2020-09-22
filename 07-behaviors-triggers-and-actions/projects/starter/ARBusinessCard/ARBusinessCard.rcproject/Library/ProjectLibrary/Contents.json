@@ -1,0 +1,57 @@
+[
+  {
+    "libraryIdentifier" : "7bfba106f53b47cd4a7fad7a6f80717e",
+    "format" : "image",
+    "displayName" : "RWTeam_ChrisLanguage.png"
+  },
+  {
+    "libraryIdentifier" : "dcbe44c4599bd68059f00dd3ef16928d",
+    "format" : "image",
+    "displayName" : "PhotoA.png"
+  },
+  {
+    "libraryIdentifier" : "4b0daa20dedd9e98a29ad77e4d3ea722",
+    "format" : "image",
+    "displayName" : "PhotoB.png"
+  },
+  {
+    "libraryIdentifier" : "de097b4ee4cf33f07d6ee057a2d4dbfd",
+    "format" : "image",
+    "displayName" : "BioButton.png"
+  },
+  {
+    "libraryIdentifier" : "b503d70d3f39d05584071d9b1b4f9bef",
+    "format" : "image",
+    "displayName" : "AuthorButton.png"
+  },
+  {
+    "libraryIdentifier" : "47d4dc7b0935fccef05e6e083d9c0f53",
+    "format" : "image",
+    "displayName" : "ContactButton.png"
+  },
+  {
+    "libraryIdentifier" : "9aa2b8c716e093d8daf855bd4bc7a08e",
+    "format" : "image",
+    "displayName" : "AuthorPage1.png"
+  },
+  {
+    "libraryIdentifier" : "8b17d2b26fb09a1f28f598717bcdf823",
+    "format" : "image",
+    "displayName" : "AuthorPage2.png"
+  },
+  {
+    "libraryIdentifier" : "02cb5f8196e927dbe48019b172fe271a",
+    "format" : "image",
+    "displayName" : "BioPage.png"
+  },
+  {
+    "libraryIdentifier" : "5b1f5d136c0cc1177a9204d3f527a6de",
+    "format" : "image",
+    "displayName" : "ContactPage1.png"
+  },
+  {
+    "libraryIdentifier" : "1e7eb8b68554fab7869338a37a4a8256",
+    "format" : "model",
+    "displayName" : "MrPig-Pig.usdz"
+  }
+]

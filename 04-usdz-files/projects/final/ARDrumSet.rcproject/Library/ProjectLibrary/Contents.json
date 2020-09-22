@@ -1,0 +1,82 @@
+[
+  {
+    "libraryIdentifier" : "96e3197f766550ff68e3d4b28d28763e",
+    "format" : "model",
+    "displayName" : "HiHat.usdz"
+  },
+  {
+    "libraryIdentifier" : "bd7fd39869d6ed49b43197f96722ae84",
+    "format" : "model",
+    "displayName" : "HiTom.usdz"
+  },
+  {
+    "libraryIdentifier" : "04cd8da2931257f4ae4ae171ca21a2a3",
+    "format" : "model",
+    "displayName" : "Kick.usdz"
+  },
+  {
+    "libraryIdentifier" : "d2f47893971907e31d5014671badc1dc",
+    "format" : "model",
+    "displayName" : "LeftCrash.usdz"
+  },
+  {
+    "libraryIdentifier" : "0a82cd48df1142e6246cfd7001b1fa27",
+    "format" : "model",
+    "displayName" : "LowTom.usdz"
+  },
+  {
+    "libraryIdentifier" : "5e0e9969ba32869b5a5961fe13ffe301",
+    "format" : "model",
+    "displayName" : "MidTom.usdz"
+  },
+  {
+    "libraryIdentifier" : "9ac18f851644846813b08d6ea44f0e46",
+    "format" : "model",
+    "displayName" : "RightCrash.usdz"
+  },
+  {
+    "libraryIdentifier" : "4f8f30af7915ceb85138f183a2791e4c",
+    "format" : "model",
+    "displayName" : "Snare.usdz"
+  },
+  {
+    "libraryIdentifier" : "0790b093635cf76f5474e88218b3468f",
+    "format" : "audio",
+    "displayName" : "HiHat.aifc"
+  },
+  {
+    "libraryIdentifier" : "f77c610609be234788e552186aad6784",
+    "format" : "audio",
+    "displayName" : "HiTom.aifc"
+  },
+  {
+    "libraryIdentifier" : "ebe05b69283965b2438d02227aed95e4",
+    "format" : "audio",
+    "displayName" : "Kick.aifc"
+  },
+  {
+    "libraryIdentifier" : "a8237edd5dbd0e9f263c2cf2269da0ac",
+    "format" : "audio",
+    "displayName" : "LeftCrash.aifc"
+  },
+  {
+    "libraryIdentifier" : "dca42eb8a02096c69d2d86e7f3ea33a2",
+    "format" : "audio",
+    "displayName" : "LowTom.aifc"
+  },
+  {
+    "libraryIdentifier" : "6e0fb438978e2d1cc8b50d4eb7fe24fc",
+    "format" : "audio",
+    "displayName" : "MidTom.aifc"
+  },
+  {
+    "libraryIdentifier" : "8269bd23048e55ce00f5ee9cc1035be0",
+    "format" : "audio",
+    "displayName" : "RightCrash.aifc"
+  },
+  {
+    "libraryIdentifier" : "eb2315e7dadd24d83de1113854586bcf",
+    "format" : "audio",
+    "displayName" : "Snare.aifc"
+  }
+]

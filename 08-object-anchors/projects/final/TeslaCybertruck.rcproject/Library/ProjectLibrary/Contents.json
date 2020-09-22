@@ -1,0 +1,27 @@
+[
+  {
+    "libraryIdentifier" : "efd84f3bf44617cb04d4c6ec9f8d15d6",
+    "format" : "image",
+    "displayName" : "Exoskeleton.png"
+  },
+  {
+    "libraryIdentifier" : "1090398978cc58f71da86ea41104310a",
+    "format" : "image",
+    "displayName" : "TeslaArmorGlass.png"
+  },
+  {
+    "libraryIdentifier" : "22316211d96d88fda8e87bc7fcd9fef6",
+    "format" : "image",
+    "displayName" : "PerformanceEfficiency.png"
+  },
+  {
+    "libraryIdentifier" : "e76444793cf299f0838fa693bf1bb04d",
+    "format" : "image",
+    "displayName" : "VersatileUtility.png"
+  },
+  {
+    "libraryIdentifier" : "d4d2d71eaa1f5484e696fa545f816885",
+    "format" : "arObject",
+    "displayName" : "TeslaCybertruck.arobject"
+  }
+]

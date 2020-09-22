@@ -1,0 +1,37 @@
+[
+  {
+    "libraryIdentifier" : "8799a12d522370fb4d82f1c02d164acd",
+    "format" : "model",
+    "displayName" : "Glasses.usdz"
+  },
+  {
+    "libraryIdentifier" : "a843c68230b10474bf8a7961a9738807",
+    "format" : "model",
+    "displayName" : "Mustache.usdz"
+  },
+  {
+    "libraryIdentifier" : "ac2d8417c2f786f4950fe097e1263a7f",
+    "format" : "model",
+    "displayName" : "Eyeball.usdz"
+  },
+  {
+    "libraryIdentifier" : "2e3d78eb5f4447cacc767403cb54d089",
+    "format" : "model",
+    "displayName" : "RobotJaw.usdz"
+  },
+  {
+    "libraryIdentifier" : "1e94b27959d44bbea9b3dbf41daf52c9",
+    "format" : "model",
+    "displayName" : "RobotSkull.usdz"
+  },
+  {
+    "libraryIdentifier" : "e291c497e695446c0d5c589914672104",
+    "format" : "model",
+    "displayName" : "RobotEyeLid.usdz"
+  },
+  {
+    "libraryIdentifier" : "d0dea2d6426c6545acb2ec7193376198",
+    "format" : "model",
+    "displayName" : "RobotEye.usdz"
+  }
+]
