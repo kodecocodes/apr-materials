@@ -1,8 +1,5 @@
 # Apple Augmented Reality by Tutorials: Materials
 
-> __TODO:__ Create a new repo from this template, create the requisite editions/x.x branch, add the book team with Write access, and update references in this readme as appropriate.
-
-
 This repo contains all the downloadable materials and projects associated with the **[Apple Augmented Reality by Tutorials](https://store.raywenderlich.com/products/apple-augmented-reality-by-tutorials)** from [raywenderlich.com](https://www.raywenderlich.com).
 
 Each edition has its own branch, named `editions/[EDITION]`. The default branch for this repo is for the most recent edition.
