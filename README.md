@@ -6,7 +6,7 @@ Each edition has its own branch, named `editions/[EDITION]`. The default branch 
 
 ## Release History
 
-| Branch                                                                               | Edition | Release Date |
-| ------------------------------------------------------------------------------------ |:-------:|:------------:|
-| [editions/0.3](https://github.com/raywenderlich/apr-materials/tree/editions/1.0.ea1) | 0.3     | 2020-09-10   |
+| Branch                                                                                   | Edition | Release Date |
+| ---------------------------------------------------------------------------------------- |:-------:|:------------:|
+| [editions/1.0.ea3](https://github.com/raywenderlich/apr-materials/tree/editions/1.0.ea3) | 1.0.ea3     | 2020-09-10   |
 
