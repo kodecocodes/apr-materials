@@ -8,5 +8,5 @@ Each edition has its own branch, named `editions/[EDITION]`. The default branch 
 
 | Branch                                                                                   | Edition | Release Date |
 | ---------------------------------------------------------------------------------------- |:-------:|:------------:|
-| [editions/1.0.ea3](https://github.com/raywenderlich/apr-materials/tree/editions/1.0.ea3) | 1.0.ea3     | 2020-09-10   |
+| [editions/1.0.ea3](https://github.com/raywenderlich/apr-materials/tree/editions/1.0.ea3) | 1.0.ea3 | 2020-09-10   |
 
