@@ -1,5 +1,4 @@
-/// Copyright (c) 2022 Razeware LLC
-
+/// Copyright (c) 2020 Razeware LLC
 ///
 /// Permission is hereby granted, free of charge, to any person obtaining a copy
 /// of this software and associated documentation files (the "Software"), to deal
@@ -32,33 +31,67 @@
 /// THE SOFTWARE.
 
 import UIKit
+import RealityKit
+import ARKit
+import MultipeerConnectivity
 
-@main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class ViewController: UIViewController, ARSessionDelegate {
   
-  var window: UIWindow?
+  // MARK: - Properties
   
+  // MARK: - IBOutlets & IBActions
   
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
-    return true
+  @IBOutlet var arView: ARView!
+  @IBOutlet weak var message: UILabel!
+  
+  @IBAction func player1ButtonPressed(_ sender: Any) {
   }
   
-  func applicationWillResignActive(_ application: UIApplication) {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+  @IBAction func player2ButtonPressed(_ sender: Any) {
   }
   
-  func applicationDidEnterBackground(_ application: UIApplication) {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
+  @IBAction func clearButtonPressed(_ sender: Any) {
   }
   
-  func applicationWillEnterForeground(_ application: UIApplication) {
-    // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-  }
+  // MARK: - AR View Functions
   
-  func applicationDidBecomeActive(_ application: UIApplication) {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
   }
 }
+
+// MARK: - Model Entity Functions
+
+extension ViewController {
+  
+  // Add code here...
+  
+}
+
+// MARK: - Gesture Functions
+
+extension ViewController {
+  
+  // Add code here...
+  
+}
+
+
+// MARK: - Multipeer Session Functions
+
+extension ViewController {
+  
+  // Add code here...
+  
+}
+
+// MARK: - Helper Functions
+
+extension ViewController {
+  
+  // Add code here...
+  
+}
+
+
 

@@ -1,5 +1,4 @@
-/// Copyright (c) 2022 Razeware LLC
-
+/// Copyright (c) 2020 Razeware LLC
 ///
 /// Permission is hereby granted, free of charge, to any person obtaining a copy
 /// of this software and associated documentation files (the "Software"), to deal
@@ -32,33 +31,86 @@
 /// THE SOFTWARE.
 
 import UIKit
+import SceneKit
+import ARKit
 
-@main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+// MARK: - App State Management
+
+
+// MARK: - UIViewController
+
+class ViewController: UIViewController {
   
-  var window: UIWindow?
+  // MARK: - Properties
   
   
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
+  // MARK: - IB Outlets
+  @IBOutlet var sceneView: ARSCNView!
+  @IBOutlet weak var statusLabel: UILabel!
+  @IBOutlet weak var resetButton: UIButton!
+  
+  // MARK: - IB Actions
+  @IBAction func resetButtonPressed(_ sender: Any) {
+  }
+  
+  @IBAction func tapGestureHandler(_ sender: Any) {
+  }
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    print("*** ViewWillAppear()")
+  }
+  
+  override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+    print("*** ViewWillDisappear()")
+  }
+  
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    print("*** DidReceiveMemoryWarning()")
+  }
+  
+  override var prefersStatusBarHidden: Bool {
     return true
-  }
-  
-  func applicationWillResignActive(_ application: UIApplication) {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
-  }
-  
-  func applicationDidEnterBackground(_ application: UIApplication) {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-  }
-  
-  func applicationWillEnterForeground(_ application: UIApplication) {
-    // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-  }
-  
-  func applicationDidBecomeActive(_ application: UIApplication) {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
   }
 }
 
+// MARK: - App Management
+extension ViewController {
+  
+  // Add code here...
+  
+}
+
+// MARK: - AR Coaching Overlay
+extension ViewController {
+  
+  // Add code here...
+  
+}
+
+// MARK: - AR Session Management (ARSCNViewDelegate)
+extension ViewController {
+  
+  // Add code here...
+  
+}
+
+// MARK: - Scene Management
+extension ViewController {
+  
+  // Add code here...
+  
+}
+
+// MARK: - Focus Node Management
+extension ViewController {
+  
+  // Add code here...
+  
+}

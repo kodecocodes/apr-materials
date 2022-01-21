@@ -1,5 +1,4 @@
-/// Copyright (c) 2022 Razeware LLC
-
+/// Copyright (c) 2020 Razeware LLC
 ///
 /// Permission is hereby granted, free of charge, to any person obtaining a copy
 /// of this software and associated documentation files (the "Software"), to deal
@@ -52,9 +51,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
   var trackingStatus: String = ""
   var statusMessage: String = ""
   var appState: AppState = .DetectSurface
-  var focusPoint:CGPoint!
-  var focusNode: SCNNode!
-  var arPortNode: SCNNode!
   
   // MARK: - IB Outlets
   @IBOutlet var sceneView: ARSCNView!
@@ -67,11 +63,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
   }
   
   @IBAction func tapGestureHandler(_ sender: Any) {
-    guard appState == .TapToStart else { return }
-    self.arPortNode.isHidden = false
-    self.focusNode.isHidden = true
-    self.arPortNode.position = self.focusNode.position
-    appState = .Started
   }
   
   override func viewDidLoad() {
@@ -79,7 +70,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     self.initScene()
     self.initCoachingOverlayView()
     self.initARSession()
-    self.initFocusNode()
   }
   
   override func viewWillAppear(_ animated: Bool) {
@@ -108,15 +98,12 @@ extension ViewController {
   
   func startApp() {
     DispatchQueue.main.async {
-      self.arPortNode.isHidden = true
-      self.focusNode.isHidden = true
       self.appState = .DetectSurface
     }
   }
   
   func resetApp() {
     DispatchQueue.main.async {
-      self.arPortNode.isHidden = true
       self.resetARSession()
       self.appState = .DetectSurface
     }
@@ -229,41 +216,11 @@ extension ViewController {
     let scene = SCNScene()
     sceneView.scene = scene
     sceneView.delegate = self
-    //sceneView.showsStatistics = true
-    sceneView.debugOptions = [
-      //ARSCNDebugOptions.showFeaturePoints,
-      //ARSCNDebugOptions.showWorldOrigin,
-      //SCNDebugOptions.showBoundingBoxes,
-      //SCNDebugOptions.showWireframe
-    ]
-    
-    let arPortScene = SCNScene(named: "art.scnassets/Scenes/ARPortScene.scn")!
-    arPortNode = arPortScene.rootNode.childNode(
-      withName: "ARPort", recursively: false)!
-    arPortNode.isHidden = true
-    sceneView.scene.rootNode.addChildNode(arPortNode)
   }
   
   func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
     DispatchQueue.main.async {
-      self.updateFocusNode()
       self.updateStatus()
-    }
-  }
-  
-  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-    DispatchQueue.main.async {
-      if let touchLocation = touches.first?.location(in: self.sceneView) {
-        if let hit = self.sceneView.hitTest(touchLocation, options: nil).first {
-          if hit.node.name == "Touch" {
-            let billboardNode = hit.node.childNode(withName: "Billboard", recursively: false)
-            billboardNode?.isHidden = false
-          }
-          if hit.node.name == "Billboard" {
-            hit.node.isHidden = true
-          }
-        }
-      }
     }
   }
   
@@ -286,46 +243,3 @@ extension ViewController {
 
 // MARK: - Focus Node Management
 
-extension ViewController {
-  
-  @objc
-  func orientationChanged() {
-    focusPoint = CGPoint(x: view.center.x, y: view.center.y  + view.center.y * 0.1)
-  }
-  
-  func initFocusNode() {
-    
-    let focusScene = SCNScene(named: "art.scnassets/Scenes/FocusScene.scn")!
-    focusNode = focusScene.rootNode.childNode(
-      withName: "Focus", recursively: false)!
-    focusNode.isHidden = true
-    sceneView.scene.rootNode.addChildNode(focusNode)
-    
-    focusPoint = CGPoint(x: view.center.x, y: view.center.y + view.center.y * 0.1)
-    NotificationCenter.default.addObserver(self, selector: #selector(ViewController.orientationChanged), name: UIDevice.orientationDidChangeNotification, object: nil)
-  }
-  
-  func updateFocusNode() {
-    
-    guard appState != .Started else {
-      focusNode.isHidden = true
-      return
-    }
-    
-    if let query = self.sceneView.raycastQuery(from: self.focusPoint, allowing: .estimatedPlane, alignment: .horizontal) {
-      let results = self.sceneView.session.raycast(query)
-      
-      if results.count == 1 {
-        if let match = results.first {
-          let t = match.worldTransform
-          self.focusNode.position = SCNVector3(x: t.columns.3.x, y: t.columns.3.y, z: t.columns.3.z)
-          self.appState = .TapToStart
-          focusNode.isHidden = false
-        }
-      } else {
-        self.appState = .PointAtSurface
-        focusNode.isHidden = true
-      }
-    }
-  }
-}
